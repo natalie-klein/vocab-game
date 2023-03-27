@@ -2,6 +2,8 @@ import React from "react";
 import { createRoot } from 'react-dom/client';
 import axios from 'axios'
 
+import Background from './components/background'
+
 const App = () => {
 
   axios.get('http://localhost:3000/fromdb').then((res) => console.log('res is:', res)).catch((err) => console.log(err))
@@ -11,6 +13,7 @@ const App = () => {
   return (
     <div>
       <h1>hojkjnla!!</h1>
+      <Background/>
     </div>
   );
 };
