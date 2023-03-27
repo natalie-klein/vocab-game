@@ -9,15 +9,15 @@ app.use(cors());
 const PORT = 3000;
 
 app.get('/fromdb', (req, res) => {
-    db.query('SELECT * FROM "public"."testing" ', (err,result) => {
+    db.query('SELECT * FROM "testing" ', (err,result) => {
         res.send(result);
     })  
 });
 
 app.get('/languages', (req, res) => {
-  db.query('SELECT * FROM "public"."languages" ', (err,result) => {
-      res.send(result);
-  })  
+    db.query('SELECT * FROM "languages" ', (err,result) => {
+        res.send(result);
+    })  
 });
 
 app.listen(PORT);
