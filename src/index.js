@@ -1,19 +1,17 @@
 import React from "react";
 import { createRoot } from 'react-dom/client';
-import axios from 'axios'
+require ('./styles.css')
 
 import Background from './components/background'
+import Header from "./components/header";
+import Options from "./components/options";
 
 const App = () => {
-
-  axios.get('http://localhost:3000/fromdb').then((res) => console.log('res is:', res)).catch((err) => console.log(err))
-
-  axios.get('http://localhost:3000/languages').then((res) => console.log('res is:', res)).catch((err) => console.log(err))
-
   return (
     <div>
-      <h1>hojkjnla!!</h1>
       <Background/>
+      <Header/>
+      <Options/>
     </div>
   );
 };
