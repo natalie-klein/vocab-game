@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export default function Background () {
     return (
         <div>
-            <Container>hey</Container>
+            <Container/>
         </div>
     )
 }
@@ -12,8 +12,8 @@ export default function Background () {
 // Styled Components 
 
 const Container = styled.div `
-    padding: 0.25em 1em;
     position: absolute;
+    z-index: -1; // is this bad practice to use z-index? how else to get the bckground behind the other components/divs?
     top: 0;
     left: 0;
     height: 100%;
