@@ -69,7 +69,8 @@ const Box = styled.div`
     margin: 1em;
     min-width: 3.3em;
     border-radius: 0.5em; 
+    border: 0.1em solid transparent;
     :hover {
-        background-color: #CA77B8; 
+        border: 0.1em solid #3693E5;
 }
 `
